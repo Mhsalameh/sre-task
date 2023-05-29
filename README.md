@@ -35,6 +35,6 @@ terraform apply plan-file
 - Due to the shortage in resources for aws free tier, I had to allocate swap spaces in the /swap directory to provide virtual memory in the system when the physical memory is insufficient to handle the workload
 - Looking at the diagram, The ssl termination was performed at the load balancer level, so I requested a certificate from ACM and used it on the load balancer
   - My other option was to use certbot on the instance level
-- looking at varnish logs, the route rules are working fine for both /static and /media routes, but returns 404
+- looking at varnish logs, the route rules are working fine for both /static and /media routes both directly routes to magento server
 - for the security I would've added a bastion server to use as a jump server for the instances configuration. But currently we can ssh to the servers from anywhere using ssh keys.
  
