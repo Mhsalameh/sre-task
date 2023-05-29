@@ -6,7 +6,7 @@ terraform init
 ```
 To apply or plan the infrastructure use the following command , but note it's better to plan and save the output , to be aware of the created infrastructure. use the following commands
 ```bash
-terraform plan --var-file=terraform.<ENV>.tfvars -out=plan-file
+terraform plan --var-file=terraform.tfvars -out=plan-file
 terraform apply plan-file
 ```
 
