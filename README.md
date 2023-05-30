@@ -24,7 +24,7 @@ terraform apply plan-file
 - **private_key_file**      private_key file path to remote execute command on provisioned instances 
 - **remote_user**           The remote user of the instance 
 
-## Infrastruction
+## Infrastructure
 - We have 2 instances inside a VPC
 - Varnish instance accepts http from loadbalancer, and ssh from anywhere
 - Bastion instance accepts http from both Varnish instance and loadbalancer, also accepts ssh from anywhere
